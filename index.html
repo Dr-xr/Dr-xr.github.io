@@ -1,16 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <title>你愿不愿意和我在一起</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=10, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我永远爱卿卿!！！！！！！！！！！！！！！！！！</title>
-</head>
+    
 
+
+
+<meta name="description" >
+<meta name="keywords" >
+<link href='./css/style.css?update=dsjdkapsjd1212po' type='text/css' rel='stylesheet'><link rel='stylesheet' href='./source/amaze-2.7.2/css/amazeui.min.css' /><script src='./js/jquery.js?update=dsjdkapsjd1212po'></script><script src='./js/tplAll.js?update=dsjdkapsjd1212po'></script><script src='./js/utils.js?update=dsjdkapsjd1212po'></script><script src='./js/sd.js?update=dsjkapsjd1212po'></script>
+
+
+      <script>
+        
+        
+  function f1(){
+	trueTip();
+} 
+var flag=1;
+function f(){ 
+	var Bn = document.getElementById('Bn');
+	var aWidth= document.body.clientWidth || document.documentElement.clientWidth;
+	var aHeight= document.body.clientHeight || document.documentElement.clientHeight;
+	var sJs1=Math.floor(Math.random()*aHeight);
+	var sJs2=Math.floor(Math.random()*aWidth);
+	if(flag==1){
+		Bn.style.top=sJs1 + 'px';
+		Bn.style.left=sJs2+'px'; 
+		flag=2;
+		
+	}else if(flag==2){
+		Bn.style.top=sJs1+'px';
+		Bn.style.left=sJs2+'px';
+		flag=3;
+	}else if(flag==3){
+	Bn.style.top=235 + 'px';
+		Bn.style.left=286 + 'px';
+		flag=4;
+	}else if(flag==4){
+		Bn.style.top=235 + 'px';
+		Bn.style.left=360 + 'px';
+		flag=1;
+	}
+}
+function f2(){
+		alert('略略略');
+	}
+	f();
+  
+  function trueTip(){
+      var tip_Text = document.getElementById("tip_Text").value;
+      var strs = new Array();
+      strs = tip_Text.split("\n");
+      for(i = 0;i<strs.length;i++){
+          alert(strs[i]);
+      }
+  }
+</script>
+ <style>
+        .btn {
+          background:#000000;
+          color:#ffffff;
+          border:0;
+          width:70px;
+          height:70px;
+          border-radius:100%;
+          font-size:17px;
+          outline:none;
+          margin: 10px;
+        }
+ </style>
+</head>
 <body>
-    <h1>卿卿是我的小公主!!!!!!!!</h1>
-    <p>我永远爱卿卿！！！！！！！！！！！！！！！！！</p>
+  <input id="tip_Text" type="hidden" value="我也愿意
+我爱你哦
+超喜欢你
+么么哒">
+    <h1 style="position:absolute; left:220px; top:175px; width:auto; height:210px;">愿意和我永远一起吗？</h1>
+  <div id="By" style="position:absolute;">
+      <input type="button" value=" YES  " class="btn" onclick="f1()" />
+  </div>
+  <div id="Bn" style="position:absolute;">
+      <input type="button" value=" NO " class="btn" onmouseover="f()" onclick="f2()"/>
+  </div>
+  
+  <script>f();</script>
+  
 </body>
 
+<script>setWaterMark()</script>
 </html>
